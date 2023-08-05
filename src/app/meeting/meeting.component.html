@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Meeting Schedule</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add custom CSS -->
+    <style>
+        .bordered-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .bordered-button {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 bordered-container">
+                <h2 class="text-center">Create Meeting Schedule</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="meetingTopic">Meeting Topic:</label>
+                        <input type="text" class="form-control" id="meetingTopic" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numberOfPeople">Number of People:</label>
+                        <input type="number" class="form-control" id="numberOfPeople" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="startTime">Start Time:</label>
+                        <input type="date" class="form-control" id="startTimeDate" required>
+                        <input type="time" class="form-control" id="startTimeTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amPm">AM/PM:</label>
+                        <select class="form-control" id="amPm">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary bordered-button">Create Meeting</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS link (required for certain Bootstrap components) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
